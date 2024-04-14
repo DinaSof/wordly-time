@@ -1,26 +1,52 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  // Brussels
+  let brusselsElement = document.querySelector("#brussels");
+  if (brusselsElement) {
+    let brusselsDateElement = brusselsElement.querySelector(".date");
+    let brusselsTimeElement = brusselsElement.querySelector(".time");
+    let brusselsTime = moment().tz("Europe/Brussels");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    brusselsDateElement.innerHTML = brusselsTime.format("MMMM Do YYYY");
+    brusselsTimeElement.innerHTML = brusselsTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Sydney
-  let sydneyElement = document.querySelector("#sydney");
-  if (sydneyElement) {
-    let sydneyDateElement = sydneyElement.querySelector(".date");
-    let sydneyTimeElement = sydneyElement.querySelector(".time");
-    let sydneyTime = moment().tz("Australia/Sydney");
+  // Johannesburg
+  let johannesburgElement = document.querySelector("#johannesburg");
+  if (johannesburgElement) {
+    let johannesburgDateElement = johannesburgElement.querySelector(".date");
+    let johannesburgTimeElement = johannesburgElement.querySelector(".time");
+    let johannesburgTime = moment().tz("Africa/Johannesburg");
 
-    sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
-    sydneyTimeElement.innerHTML = sydneyTime.format(
+    johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM Do YYYY");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Darwin
+  let darwinElement = document.querySelector("#darwin");
+  if (darwinElement) {
+    let darwinDateElement = darwinElement.querySelector(".date");
+    let darwinTimeElement = darwinElement.querySelector(".time");
+    let darwinTime = moment().tz("Australia/Darwin");
+
+    darwinDateElement.innerHTML = darwinTime.format("MMMM Do YYYY");
+    darwinTimeElement.innerHTML = darwinTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Galapagos
+  let galapagosElement = document.querySelector("#galapagos");
+  if (galapagosElement) {
+    let galapagosDateElement = galapagosElement.querySelector(".date");
+    let galapagosTimeElement = galapagosElement.querySelector(".time");
+    let galapagosTime = moment().tz("Pacific/Galapagos");
+
+    galapagosDateElement.innerHTML = galapagosTime.format("MMMM Do YYYY");
+    galapagosTimeElement.innerHTML = galapagosTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
